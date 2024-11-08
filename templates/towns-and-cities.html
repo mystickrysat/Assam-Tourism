@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}
+Assam - Towns and Cities
+{% endblock %}
+
+{% block content %}
+<h1>Towns and Cities Page</h1>
+<p>This is the towns and cities page content.</p>
+
+<!-- Not final design, create breaks in the list to fit all places without much scrolling -->
+<ul>
+    {% for location in locations %}
+    <li>{{ location }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
